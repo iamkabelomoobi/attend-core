@@ -44,6 +44,7 @@ const RAW_RUNTIME_STATE =
           ["@types/pg", "npm:8.20.0"],\
           ["@types/supertest", "npm:7.2.0"],\
           ["attend-core", "workspace:."],\
+          ["dotenv", "npm:17.4.2"],\
           ["eslint", "virtual:f8a28a2317498027a96489527e4568333536a6606c68a7e8674d1aab3eda1c4cffc00b024c743768eb955e818039540be215297865e26e3e23cf3b3adb71a7c1#npm:9.39.4"],\
           ["eslint-config-prettier", "virtual:f8a28a2317498027a96489527e4568333536a6606c68a7e8674d1aab3eda1c4cffc00b024c743768eb955e818039540be215297865e26e3e23cf3b3adb71a7c1#npm:10.1.8"],\
           ["eslint-plugin-prettier", "virtual:f8a28a2317498027a96489527e4568333536a6606c68a7e8674d1aab3eda1c4cffc00b024c743768eb955e818039540be215297865e26e3e23cf3b3adb71a7c1#npm:5.5.6"],\
@@ -4274,6 +4275,7 @@ const RAW_RUNTIME_STATE =
           ["@types/pg", "npm:8.20.0"],\
           ["@types/supertest", "npm:7.2.0"],\
           ["attend-core", "workspace:."],\
+          ["dotenv", "npm:17.4.2"],\
           ["eslint", "virtual:f8a28a2317498027a96489527e4568333536a6606c68a7e8674d1aab3eda1c4cffc00b024c743768eb955e818039540be215297865e26e3e23cf3b3adb71a7c1#npm:9.39.4"],\
           ["eslint-config-prettier", "virtual:f8a28a2317498027a96489527e4568333536a6606c68a7e8674d1aab3eda1c4cffc00b024c743768eb955e818039540be215297865e26e3e23cf3b3adb71a7c1#npm:10.1.8"],\
           ["eslint-plugin-prettier", "virtual:f8a28a2317498027a96489527e4568333536a6606c68a7e8674d1aab3eda1c4cffc00b024c743768eb955e818039540be215297865e26e3e23cf3b3adb71a7c1#npm:5.5.6"],\
