@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:-postgres:13}
+    container_name: ${POSTGRES_CONTAINER_DEV:-attend-core-postgres-dev}
+    restart: unless-stopped
+    ports:
+      - "${POSTGRES_HOST_PORT:-55433}:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DATABASE_NAME:-attend_core}
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data
+
+  mailhog:
+    image: ${MAILHOG_IMAGE:-mailhog/mailhog}
+    container_name: ${MAILHOG_CONTAINER_DEV:-attend-core-mailhog-dev}
+    restart: unless-stopped
+    ports:
+      - "${MAILHOG_SMTP_HOST_PORT:-11025}:1025"
+      - "${MAILHOG_WEB_HOST_PORT:-18025}:8025"
+
+volumes:
+  postgres_data_dev:
+    name: ${POSTGRES_VOLUME_DEV:-attend-core-postgres-data-dev}
+
+networks:
+  default:
+    name: ${APP_NETWORK:-attend-core-network}
